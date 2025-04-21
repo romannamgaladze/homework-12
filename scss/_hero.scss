@@ -1,0 +1,38 @@
+main {
+  .main-conteiner {
+    max-width: 1200px;
+    height: auto;
+    // border: 2px solid blue;
+    // background-color: beige;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 220px;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 70px;
+      color: $primaryColor;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  main .main-conteiner {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+    }
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
